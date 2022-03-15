@@ -74,11 +74,11 @@ def write_notes(notes: dict) -> None:
 def main():
 	clear()
 	while True:
-		print("\n\033[1mWelcome to the note-inator. Please choose a function\033[0m")
-		print("0) Read notes")
-		print("1) Write notes")
-		print("2) Add Group")
-		print("3) Delete Group")
+		print('''\n\033[1mWelcome to the note-inator. Please choose a function\033[0m
+0) Read notes
+1) Write notes
+2) Add Group
+3) Delete Group''')
 		choice = int(input(">: "))
 		notes = open_file()
 		if choice == 0:
